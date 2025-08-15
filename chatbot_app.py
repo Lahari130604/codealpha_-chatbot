@@ -47,14 +47,15 @@ for sender, message in st.session_state.chat_history:
     if sender == "🧑‍💻 You":
         st.markdown(
             f"""
-            <div style='text-align: right; color:black; background-color: #00ced1; padding: 8px; border-radius: 10px; margin: 5px 0;'>
+            <div style='text-align: right; color:black; background-color: #00ff7f; padding: 8px; border-radius: 10px; margin: 5px 0;'>
                 <b>{sender}:</b> {message}
             </div>
             """, unsafe_allow_html=True)
     else:
         st.markdown(
             f"""
-            <div style='text-align: left; color: black; background-color: #ff69b4; padding: 8px; border-radius: 10px; margin: 5px 0;'>
+            <div style='text-align: left; color: black; background-color: #ff4500; padding: 8px; border-radius: 10px; margin: 5px 0;'>
                 <b>{sender}:</b> {message}
             </div>
             """, unsafe_allow_html=True)
+
